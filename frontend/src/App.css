@@ -1,0 +1,222 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #331e10;
+  color: #80690f; 
+  text-align: center;
+}
+
+li input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin: 0 8px 0 0; 
+  cursor: pointer;
+}
+
+li label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;          
+  cursor: pointer;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1, h2, h3 {
+  color: #e6c25a; 
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;   
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+nav button,
+button {
+  width: 180px;             
+  padding: 10px 0;
+  background: #b9953a;       
+  color: #6b3e1f;           
+  border: 2px solid #6b3e1f;
+  border-radius: 6px;        
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav button:hover,
+button:hover {
+  background: #94772f;       
+}
+
+nav button.active {
+  background: #553119;       
+  color: #b9953a;            
+}
+
+
+button + strong,
+button + span,
+button + a,
+button + label {
+  margin-left: 10px;
+}
+
+strong + button,
+span + button,
+a + button,
+label + button {
+  margin-left: 10px;
+}
+
+li button {
+  margin-right: 10px;
+}
+
+input,
+select {
+  display: inline-block;
+  margin: 0;         
+  padding: 8px 14px;
+  background: #f5ebd0;       
+  color: #331e10;            
+  border: 2px solid #b9953a;
+  border-radius: 8px;        
+  text-align: center;
+  outline: none;
+}
+
+.card {
+  background: #b9953a;
+  color: #331e10;
+  border-radius: 10px;       
+  padding: 14px;
+  padding: 22px 18px;        
+  margin: 16px auto;
+  margin: 0 auto 12px;
+  text-align: center;
+}
+
+.picker {
+  display: grid;
+  justify-items: start;      
+  width: fit-content;       
+  margin: 8px auto;        
+  gap: 4px;
+  text-align: left;
+}
+
+.picker label {
+  display: flex;
+  align-items: center;       
+  cursor: default;
+}
+
+.error {
+  background: #fde8e8;
+  color: #b91c1c;
+  padding: 8px;
+  border-radius: 8px;        
+  max-width: 420px;
+  margin: 8px auto;
+  text-align: center;
+}
+
+progress {
+  width: 100%;
+  height: 16px;
+  border-radius: 8px;       
+}
+
+ol, ul {
+  list-style-position: inside;
+  padding-left: 0;
+  
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;                  
+}
+
+.dot-list li {
+  cursor: default;
+}
+
+.dot {
+  display: inline-block;
+  color: #553119;
+  margin-right: 0;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.dot {
+  display: inline-block;
+  color: #553119;
+  margin-right: 10px;
+}
+
+li {
+  gap: 10px;
+}
+
+
+.plan-title,
+.plan-empty {
+  text-align: left;
+  margin: 14px 0 6px;
+}
+
+.plan-list {
+  text-align: left;
+  margin: 0 0 8px;
+}
+
+.plan-list li {
+  justify-content: flex-start;  
+}
+
+
+.unwatched-title { color: #8b1a1a; }   
+.watched-title { color: #1d4d2b; }     
+
+
+progress {
+  width: 100%;
+  height: 8px;                 
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #87502b;           
+  accent-color: #1d4d2b;         
+}
+progress::-webkit-progress-bar { background: #87502b; border-radius: 4px; }
+progress::-webkit-progress-value { background: #1d4d2b; border-radius: 4px; }
+progress::-moz-progress-bar { background: #1d4d2b; border-radius: 4px; }
+
+.booking-form {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;     
+  gap: 12px;
+}
+
+.booking-form select,
+.booking-form input {
+  width: 260px;            
+  box-sizing: border-box;
+}
