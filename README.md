@@ -79,15 +79,15 @@ Errors return JSON `{ "error": CODE, "message": ... }`:
 ## Project Data model
 ```mermaid
 erDiagram
-    MOVIES ||--o{ MOVIE_PREREQUISITES : "has"
-    MOVIES ||--o{ MOVIE_PREREQUISITES : "is required by"
-    CINEMAS ||--o{ CINEMA_BUNDLES : "sells"
+    MOVIES ||--o{ MOVIE_PREREQUISITES : has
+    CINEMAS ||--o{ CINEMA_BUNDLES : sells
+
     MOVIES {
         int id PK
         string title UK
         int release_year
         int runtime
-        bool watched
+        boolean watched
     }
     MOVIE_PREREQUISITES {
         int movie_id FK
